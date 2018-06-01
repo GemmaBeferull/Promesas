@@ -9,7 +9,7 @@ function app() {
   var sumTimePerQuestion = 0;
   var indexCountDown = 0;
   var idSetInterval, answer, questions;
-
+              ////PETICIÓN AL SERVIDOR/////
   ////////              CON AJAX                ///////
 
   // function getQuestions() {
@@ -23,13 +23,13 @@ function app() {
 
 ////////              CON PROMESAS              ///////
 
-// function getQuestions(url) {
-//   return New Promise (function (resolve, reject) {
+// function getQuestions() {
+//   return new Promise (function (resolve, reject) {
 //     var request = new XMLHttpRequest();
-//     request.open("GET", url);
+//     request.open("GET", '/api/questions');
 //     request.addEventListener("load", () => {
-//         var data = JSON.parse(request.responseText);
-//         resolve(data);
+//         questions = JSON.parse(request.responseText);
+//         resolve(questions);
 //     });
 //     request.open("GET", '/api/questions');
 //     request.send();
@@ -39,19 +39,17 @@ function app() {
 
  ////////              CON FETCH                ///////
 
-  // function getQuestions() {
-  //   fetch('/api/questions')
-  //     .then(function(data){
-  //       console.log(data);
-  //       questions = data.json();
-  //     });
-  // }
+ function getQuestions() {
+  fetch('/api/questions')
+    .then(function(data){
+      return data.json();
+    }).then(function(response){
+      questions = response;
+    });
+    console.log(questions);
+}
 
   
-
-
-
-
 
   function startGame() {
     printDomElements ();
