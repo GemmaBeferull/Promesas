@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "babel-install": "2.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^22.4.4"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "jshint": "^2.9.5",
+    "pug": "^2.0.3",
+    "yarn": "^1.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

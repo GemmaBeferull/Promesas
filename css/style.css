@@ -1,0 +1,109 @@
+.title {
+    text-align: center;
+}
+
+.title h1{
+    color: #3C6E71;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.title h3{
+    color: #353535;
+}
+
+.questionsAndAnswers p {
+    display: inline;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.questionsAndAnswers {
+    margin-top:0;
+    width: 33%;
+}
+
+.score {
+    margin-top:0;
+    width: 33%;
+    text-align: center;
+}
+
+.score h3{
+    font-size: 28px;
+    color: #284B63;
+}
+
+.score p {
+    color: #3C6E71;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+table {
+    margin:auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.quizQuestion {
+    text-align: center;
+    font-size: 22px;
+    color: #284B63;
+}
+
+#startGameButton, #sendResponse{
+    background: #284B63;
+    border: none;
+    padding: 10px 20px;
+    color: #D9D9D9;
+    font-size: 17px;
+}
+
+.response {
+    margin: 0 auto 25px;
+    display: table;
+}
+
+h4.timer {
+    text-align: center;
+    font-size: 26px;
+    color: #3C6E71;
+}
+
+.estadisticas {
+    margin: auto;
+    display: table;
+}
+
+.estadisticas h3 {
+    color: #284B63;
+    font-size: 22px;
+    margin-top:28px;
+}
+
+.estadisticas p{
+    color: #353535;
+}
+
+.endGame {
+    width: 33%;
+    text-align: center;
+    color: #284B63;
+}
